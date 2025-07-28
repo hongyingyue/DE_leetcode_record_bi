@@ -1,0 +1,14 @@
+
+__pychche__/
+.env
+
+
+# ignore secrets
+my-creds.json
+.dlt/
+
+# ignore db files
+*.db
+
+# ignore logs
+*.log

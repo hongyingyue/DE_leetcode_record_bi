@@ -1,0 +1,7 @@
+dlt[bigquery]>=0.5.1
+pandas
+google-cloud-bigquery
+google-cloud-bigquery-storage
+pendulum
+apache-airflow-providers-google
+pyarrow
