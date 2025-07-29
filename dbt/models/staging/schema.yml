@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('DBT_DATABASE', 'project-2025-457220') }}"
+    schema: "{{ env_var('DBT_SCHEMA', 'de_lc_notion_dlt') }}"
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: leet_code_tracking
+      - name: leet_code_tracking__properties__qno__title
+         # freshness:
+           # error_after: {count: 6, period: hour}
+      - name: leet_code_tracking__properties__question_title__rich_text
+
+      - name: leet_code_tracking__properties__list__multi_select
+      - name: leet_code_tracking__properties__x__multi_select
+
+models:
+  - name: stg_main
+
+  - name: stg_qno
+
+  - name: stg_qtitle
+
+  - name: stg_status
+
+  - name: stg_list
